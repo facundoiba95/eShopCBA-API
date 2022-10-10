@@ -1,6 +1,6 @@
-let productos = [
-    [
-        {"smartphones:": [ 
+ {
+    
+    "smartphones": [ 
 
             {
                 "iphone": [
@@ -60,7 +60,7 @@ let productos = [
                     "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/celulares/iphone/iphone_13_pro_verde_03_ad_l.jpg?raw=true",
                     "free-shipping":true,
                     "tradename":"iPhone"
-                },
+                }
 
             ]
             },
@@ -73,17 +73,12 @@ let productos = [
                     "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/celulares/samsung/SM-A505_001_Front.png?raw=true",
                     "free-shipping":true,
                     "tradename": "Samsgung"
-                },
+                }
             ]
         
-            }
-            
-        
-        ]
-    }
-],
-[
-    {"tablets": [
+            }],
+
+    "tablets": [
 
         {"iPad": [
             {
@@ -101,7 +96,7 @@ let productos = [
                 "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/tablets/iphone/Ipad-pro.png?raw=true",
                 "free-shipping":true,
                 "tradename":"iPhone"
-            },
+            }
 
         ]},
         {"samsung": [
@@ -112,13 +107,12 @@ let productos = [
                 "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/tablets/samsung/samsung-tabS6lite.png?raw=true",
                 "free-shipping":true,
                 "tradename":"Samsung"
-            },
+            }
 
-        ]}
-    ]}
-],
-[
-    {"headsets": [
+        ]}],
+
+
+    "headsets": [
         {"AKG": [
             {
                 "id": 12,
@@ -127,7 +121,7 @@ let productos = [
                 "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/headsets/AKG_k240_studio.png?raw=true",
                 "free-shipping":true,
                 "tradename":"AKG"
-            },    
+            }  
         ]},
         {"corsair": [
             {
@@ -137,13 +131,10 @@ let productos = [
                 "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/headsets/corsair%20virtuoso%20special%20edition.png?raw=true",
                 "free-shipping":true,
                 "tradename":"Corsair"
-            },   
-        ]},
-    
-    ]}
-],
-[
-    {"notebooks": [
+            }   
+        ]}],
+
+    "notebooks": [
         {"asus": [
             {
                 "id": 14,
@@ -152,7 +143,7 @@ let productos = [
                 "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/netbook/asus%20x509MA%20intel%20n4020.png?raw=true",
                 "free-shipping":true,
                 "tradename":"ASUS"
-            },     
+            }     
         ]},
         {"lenovo": [
             {
@@ -170,7 +161,7 @@ let productos = [
                 "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/netbook/lenovo%20thinkbook%2015.png?raw=true",
                 "free-shipping":true,
                 "tradename":"Lenovo"
-            },  
+            }
         ]},
         {"razer": [
             {
@@ -180,7 +171,7 @@ let productos = [
                 "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/netbook/Razer-Blade-15.jpg?raw=true",
                 "free-shipping":true,
                 "tradename":"Razer"
-            },  
+            }
         ]},
         {"dell": [
             {
@@ -190,12 +181,9 @@ let productos = [
                 "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/netbook/dell%20inspiron%20n5559.png?raw=true",
                 "free-shipping":true,
                 "tradename":"Dell"
-            },    
+            }  
         ]}
-    ]}
-]
-        
-]
+    ]
+}
 
 
-module.exports = productos;

@@ -1,25 +1,25 @@
 const express = require('express');
-const productos = require('./productosArray')
+const arrayProductos = require('./datos.js')
 const app = express();
 
 const cors = require('cors')
 app.use(cors());
 
 const routerApi= express.Router();
-app.use('/api', routerApi)
+app.use('/api', routerApi);
 
 
 routerApi.get('/',(req,res)=> {
     if(req.query.categoria === 'notebooks'){
-        return res.send(productos[3]);
+        return res.send(arrayProductos.notebooks);
     } else if (req.query.categoria === 'smartphones'){
-        return res.send(productos[0]);
+        return res.send(arrayProductos.smartphones);
     } else if(req.query.categoria === 'tablets'){
-        return res.send(productos[1]);
+        return res.send(arrayProductos.tablets);
     } else if(req.query.categoria === 'headsets'){
-        return res.send(productos[2])
+        return res.send(arrayProductos.headsets)
     } else if(req.url === '/'){
-        return res.send(productos);
+        return res.send(arrayProductos);
     } else {
         const error = res.status(404);
         return res.status(404).send(`No se encontro la pagina :/   ${error}`)
