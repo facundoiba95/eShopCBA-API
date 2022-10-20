@@ -60,6 +60,14 @@
                     "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/celulares/iphone/iphone_13_pro_verde_03_ad_l.jpg?raw=true",
                     "free-shipping":true,
                     "tradename":"iPhone"
+                },
+                {
+                    "id": 20,
+                    "name": "iPhone 14",
+                    "price": 546000,
+                    "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/celulares/iphone/iphone14.jpg?raw=true",
+                    "free-shipping":true,
+                    "tradename":"iPhone"
                 }
 
             ]
@@ -71,6 +79,14 @@
                     "name": "Samsung SM-A505",
                     "price": 54600,
                     "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/celulares/samsung/SM-A505_001_Front.png?raw=true",
+                    "free-shipping":true,
+                    "tradename": "Samsgung"
+                },
+                {
+                    "id": 19,
+                    "name": "Samsung Galaxy Z Flip4",
+                    "price": 215000,
+                    "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/celulares/samsung/samsungzflip.jpg?raw=true",
                     "free-shipping":true,
                     "tradename": "Samsgung"
                 }
@@ -181,6 +197,16 @@
                 "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/netbook/dell%20inspiron%20n5559.png?raw=true",
                 "free-shipping":true,
                 "tradename":"Dell"
+            }  
+        ]},
+        {"macbook": [
+            {
+                "id": 21,
+                "name": "MacBook Pro",
+                "price": 653000,
+                "image":"https://github.com/facundoiba95/eShopCBA-API/blob/master/netbook/macbookpro.jpg?raw=true",
+                "free-shipping":true,
+                "tradename":"MacBook"
             }  
         ]}
     ]
