@@ -1,5 +1,5 @@
 const express = require('express');
-const arrayProductos = require('./datos.js')
+const arrayProductos = require('./productosArray')
 const app = express();
 
 const cors = require('cors')
@@ -10,14 +10,14 @@ app.use('/api', routerApi);
 
 
 routerApi.get('/',(req,res)=> {
-    if(req.query.categoria === 'notebooks'){
-        return res.send(arrayProductos.notebooks);
+    if(req.query.categoria === 'netbooks'){
+        return res.send(arrayProductos.filter(prod => prod.category === 'netbooks'));
     } else if (req.query.categoria === 'smartphones'){
-        return res.send(arrayProductos.smartphones);
+        return res.send(arrayProductos.filter(prod => prod.category === 'smartphones'))
     } else if(req.query.categoria === 'tablets'){
-        return res.send(arrayProductos.tablets);
+        return res.send(arrayProductos.filter(prod => prod.category === 'tablets'))
     } else if(req.query.categoria === 'headsets'){
-        return res.send(arrayProductos.headsets)
+        return res.send(arrayProductos.filter(prod => prod.category === 'headsets'))
     } else if(req.url === '/'){
         return res.send(arrayProductos);
     } else {
